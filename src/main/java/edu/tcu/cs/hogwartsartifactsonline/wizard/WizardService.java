@@ -54,6 +54,7 @@ public class WizardService {
         this.wizardRepository.deleteById(wizardId);
     }
 
+
     public void assignArtifact(Integer wizardId, String artifactId){
         // Find this artifact by Id from DB.
         Artifact artifactToBeAssigned = this.artifactRepository.findById(artifactId)
